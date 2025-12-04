@@ -92,6 +92,12 @@ body {
 
 /* IMAGE AREA */
 .hero-image {
+    /* make image area a vertical stack and center contents */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
     position: relative;
 }
 
@@ -100,32 +106,47 @@ body {
     height: 320px;
     background: #e6e9ef;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-size: 28px;
-    font-weight: bold;
+    /* overflow: hidden;           /\* IMPORTANT: trims the image into a circle \*\/ */
+    display: block;
+    margin: 0 auto;
 }
 
 .badge {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #6B3F69;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* keep your existing badge styles; these ensure inline text layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 28px;
+    border-radius: 24px;
+    background: #6b3f69; /* keep your badge color */
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: -36px; /* change this value to increase/decrease overlap */
+    z-index: 5;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* GitHub and Download CV Links */
+/* typed text inside badge */
+.badge #typed {
+    white-space: nowrap;
+}
+
+/* blinking caret */
+.badge .cursor {
+    display: inline-block;
+    margin-left: 6px;
+    color: #fff;
+    opacity: 1;
+    animation: blink 900ms steps(2, start) infinite;
+    font-weight: 700;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
 .github-link,
 .download-cv-link {
     display: inline-flex;
