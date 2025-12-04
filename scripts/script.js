@@ -52,3 +52,39 @@ document.querySelectorAll('.skill-card, .project-card, .contact-card').forEach(e
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('typed');
+    if (!el) return;
+
+    const text = 'WEB & UI DESIGNER!';
+    const typeSpeed = 90;     // ms per character typing
+    const eraseSpeed = 40;    // ms per character erasing
+    const pauseAfter = 1400;  // pause after full text typed
+    let index = 0;
+    let erasing = false;
+
+    function tick() {
+        if (!erasing) {
+            el.textContent = text.slice(0, index);
+            if (index < text.length) {
+                index++;
+                setTimeout(tick, typeSpeed);
+            } else {
+                erasing = true;
+                setTimeout(tick, pauseAfter);
+            }
+        } else {
+            el.textContent = text.slice(0, index);
+            if (index > 0) {
+                index--;
+                setTimeout(tick, eraseSpeed);
+            } else {
+                erasing = false;
+                setTimeout(tick, 500);
+            }
+        }
+    }
+
+    tick();
+});
