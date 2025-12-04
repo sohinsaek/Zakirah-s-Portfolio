@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakirah Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Resume</a></li> <!-- changed: now jumps to Education -->
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="intro">Hi there! I'm Dayang Siti Zakirah👋</p>
+            <h1>Creative Web <br> & UI Designer.</h1>
+
+            <p class="description">
+                A motivated and hardworking individual with a strong willingness to learn. Able to work well in a team or independently,
+                with good communication and time management skills. Eager to gain experience and contribute positively to the workplace.
+                Committed to developing skills in teamwork, communication, and problem-solving to support project delivery and cost control.
+                Known for being a fast learner, reliable, and committed to delivering quality work.
+            </p>
+
+            <!--GitHub Icon Link -->
+            <a href="https://github.com/zakirahhzulkarnainn-blip" 
+                target="_blank" 
+                class="github-link">
+                    <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+            <!-- Download CV Link -->
+            <a href="kirah resume.pdf" 
+                download 
+                class="download-cv-link">
+                    <i class="fa-solid fa-download"></i> Download CV
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle">
+                <img src="images/profile.jpeg" alt="Profile Picture" class="profile-picture">
+            </div>
+            <div class="badge">WEB & UI DESIGNER!</div>
+        </div>
+    </section>
+
+    <!-- PERSONAL INFO SECTION -->
+    <section id="personal-info" class="resume-section">
+        <h2 class="section-title">Personal Information</h2>
+        <p><strong>Email:</strong> zakirahhzulkarnainn@yahoo.com</p>
+        <p><strong>Phone:</strong> 019-4379254</p>
+        <p><strong>Location:</strong> Taman Sumber Alam Sanctuary, 93050 Kuching Sarawak.</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="resume-section">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li>
+                <strong>Bachelor in Multimedia Computing</strong>, UNIVERSITI MALAYSIA SARAWAK (2024 - Present)
+                <p>Current CGPA: 3.73</p>
+            </li>
+            <li>
+                <strong>Diploma in Computer Science</strong>, UITM SARAWAK KAMPUS SAMARAHAN (2020 -2023)
+                <p>Graduated with CGPA: 3.70</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section id="work-experience" class="resume-section">
+        <h2 class="section-title">Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Internship</strong> - Sarawak Energy (April 2022 - August 2022)
+                <p>Configured and deployed laptops with the latest operating system updates
+                   and security patches.</p>
+                <p>Performed hardware maintenance, including battery replacements, SSD
+                   upgrades, and RAM module replacements.</p>
+            </li>
+            <li>
+                <strong>Kiosk Assistant</strong> - FCSIT, Unimas (April 2024 - June 2024)
+                <p>Oversaw all daily kiosk operations, sales management, and accurate cash handling.</p>    
+                <p>Managed and organized inventory to ensure full product availability and efficient customertransactions.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="resume-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-windows"></i>
+                <p class="skill-name">Microsoft Word</p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-windows"></i>
+                <p class="skill-name">Microsoft Excel</p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-windows"></i>
+                <p class="skill-name">Microsoft PowerPoint</p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-php"></i>
+                <p class="skill-name">PHP</p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <p class="skill-name">JAVA</p>
+                <span class="skill-level">Beginner</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-c"></i>
+                <p class="skill-name">C</p>
+                <span class="skill-level">Beginner</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-python"></i>
+                <p class="skill-name">Python</p>
+                <span class="skill-level">Beginner</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <p class="skill-name">MySQL</p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="project" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image1.png" alt="Project 1 screenshot">
+                </div>
+                <h3>PHP, MySQL</h3>
+                <p>Vehicle Rental Database System with web-based management features using PHP and MySQL</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image2.png" alt="Project 2 screenshot">
+                </div>
+                <h3>Figma Design</h3>
+                <p>UI/UX Mobile App Prototype for Sarawak Metro ART System</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image3.png" alt="Project 3 screenshot">
+                </div>
+                <h3>HTML, CSS, JavaScript</h3>
+                <p>Portfolio website built from scratch and deployed using Github Pages</p>
+            </div>
+        </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+<h2>Contact Me</h2>
+    <p class="contact-subtext">Feel free to reach out for collaborations, inquiries, or opportunities.</p>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Phone</h3>
+            <p>Get in touch for inquiries or support.</p>
+            <a href="tel:0194379254" class="contact-link">019 - 4379254</a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>For questions or feedback, drop me a message anytime.</p>
+            <a href="mailto:zakirahhzulkarnainn@yahoo.com" class="contact-link">zakirahhzulkarnainn@yahoo.com</a>
+        </div>
+
+
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally on LinkedIn.</p>
+            <a href="https://www.linkedin.com/in/dayang-siti-zakirah" target="_blank" class="contact-link">Visit my LinkedIn</a>
+        </div>
+    </div>
+    </section>
+</section>
+
+<!-- ====================================== Footer ===================================== -->
+                    <footer>
+                        <div class="rights-reserved">
+                            <h2>© 2025 - All rights reserved. Designed by Adriana</h2>
+                        </div>
+                    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
