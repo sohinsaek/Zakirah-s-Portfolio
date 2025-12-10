@@ -39,7 +39,51 @@ body {
     color: #6B3F69;
   }
 }
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
 
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card, .project-card {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .download-cv-link, .github-link, .project-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
 /* NAVBAR */
 .navbar {
     width: 100%;
@@ -775,6 +819,7 @@ ul li p {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 .project-btn {
     display: inline-block;
     margin-top: 12px;
@@ -791,5 +836,4 @@ ul li p {
     background-color: #c275a4;
     transform: scale(1.05);
 }
-
 
