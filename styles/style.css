@@ -15,6 +15,31 @@ body {
     color: #2a2a2a;
 }
 
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6B3F69;
+  }
+}
+
 /* NAVBAR */
 .navbar {
     width: 100%;
