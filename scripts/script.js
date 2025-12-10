@@ -10,10 +10,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('active');
-});
-
 // Active navbar link highlighting
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
