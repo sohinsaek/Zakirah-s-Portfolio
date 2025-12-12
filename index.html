@@ -11,7 +11,7 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">MyPortfolio</div>
+        <div class="logo">Portfolio</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -20,6 +20,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+            <!-- Dark Mode Toggle -->
+            <button id="dark-mode-toggle" class="dark-toggle">
+                🌙 Dark Mode
+            </button>
     </header>
 
     <!-- HERO SECTION -->
@@ -45,7 +49,7 @@
             <a href="kirah resume.pdf" 
                 download 
                 class="download-cv-link">
-                    <i class="fa-solid fa-download"></i> Download CV
+                    <i class="fa-solid fa-download"></i> Check Resume
             </a>
         </div>
 
@@ -96,7 +100,7 @@
             <li>
                 <strong>Kiosk Assistant</strong> - FCSIT, Unimas (April 2024 - June 2024)
                 <p>Oversaw all daily kiosk operations, sales management, and accurate cash handling.</p>    
-                <p>Managed and organized inventory to ensure full product availability and efficient customer transactions.</p>
+                <p>Managed and organized inventory to ensure full product availability and efficient customertransactions.</p>
             </li>
         </ul>
     </section>
@@ -158,13 +162,19 @@
                     <img src="images/image1.png" alt="Project 1 screenshot">
                 </div>
                 <h3>PHP, MySQL</h3>
-                <p>Vehicle Rental Database System with web-based management features using PHP and MySQL. </p>
+                <p class="project-year">Year: December 2024</p>
+                <p class="project-description">
+                    Vehicle Rental Database System with web-based management features using PHP and MySQL.The project focused on
+                    applying database concepts and normalization to build a robust relational schema, ensuring data integrity and
+                    efficient operations.
+                </p>
                 
                 <!-- PDF BUTTON -->
-                <a href="RentalVehicle.pdf" target="_blank" class="project-btn">
-                    View Project
-                </a>
-
+                <div class="project-btn-wrapper">
+                    <a href="RentalVehicle.pdf" target="_blank" class="project-btn">
+                        View Project
+                    </a>
+                </div>
             </div>
 
             <div class="project-card">
@@ -172,13 +182,18 @@
                     <img src="images/image2.png" alt="Project 2 screenshot">
                 </div>
                 <h3>Figma Design</h3>
-                <p>UI/UX Mobile App Prototype for Sarawak Metro ART System. Apply the System Usability Scale (SUS) to measure user
-                   satisfaction and identify areas for improvement.</p>
-                
+                <p class="project-year">Year: June - July 2025</p>
+                <p class="project-description">
+                    UI/UX Mobile App Prototype for Sarawak Metro ART System. Apply System Usability Scale (SUS) to measure user
+                    satisfaction and identify areas for improvement.
+                </p>
+                    
                 <!-- PDF BUTTON -->
-                <a href="HCI.pdf" target="_blank" class="project-btn">
-                    View Project
-                </a>
+                <div class="project-btn-wrapper">
+                    <a href="HCI.pdf" target="_blank" class="project-btn">
+                        View Project
+                    </a>
+                </div>
             </div>
 
             <div class="project-card">
@@ -186,14 +201,20 @@
                     <img src="images/image3.png" alt="Project 3 screenshot">
                 </div>
                 <h3>HTML, CSS, JavaScript</h3>
-                <p>Portfolio website built from scratch and deployed using GitHub Pages.</p>
+                <p class="project-year">Year: November 2025</p>
+                 <p class="project-description">
+                    Designed, coded, and deployed a responsive personal portfolio website using pure
+                    HTML, CSS, and JavaScript to showcase my client’s skills, experience, and projects. Hosted the live site on
+                    GitHub Pages for long-term accessibility.
+                </p>
                 
                 <!-- WEBSITE BUTTON -->
-                <a href="https://adrianaaffendy.netlify.app/" 
-                target="_blank" 
-                class="project-btn">
-                    Visit Project
-                </a>
+                <div class="project-btn-wrapper">
+                    <a href="https://adrianaaffendy.netlify.app/" target="_blank" class="project-btn">
+                        Visit Project
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
