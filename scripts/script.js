@@ -10,6 +10,29 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Dark Mode Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Check saved preference
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️ Light Mode';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            toggleBtn.textContent = '☀️ Light Mode';
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            toggleBtn.textContent = '🌙 Dark Mode';
+            localStorage.setItem('dark-mode', 'disabled');
+        }
+    });
+});
+
 // Active navbar link highlighting
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
